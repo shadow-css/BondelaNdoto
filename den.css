@@ -35,8 +35,6 @@ height: 7px; }
 background: #540000;}
 ::-webkit-scrollbar-thumb {
 background: #9c0000; } 
- 
-/* HEADERS - Can remove the H1 “Before” if they don’t want a den title, H3 is the default text */
 
 h1 {
 color: transparent !important;
@@ -46,8 +44,8 @@ position: relative !important;}
 
 h1::before {
 content: "Kujali’s Den" !important;
-color: #ffffff
-font-family: Cinzel, serif !important;
+color: #ffffff;
+font-family: Verdana, serif !important;
 font-size: 34px !important;
 font-weight: 900 !important;
 letter-spacing: -0.5px !important;
@@ -61,6 +59,7 @@ filter: drop-shadow(1px 5px 2px rgba(0, 0, 0, 0.9)) !important;
 
 }
 
+
 h2 {
 color: #0d87ff !important;
 font-size: 24px;}
@@ -68,8 +67,6 @@ font-size: 24px;}
 h3 {
 color: #0db88a !important;
 font-size: 18px;}
-
-/* LINKS - Every Link on the page.*/
 
 a:link,
 a:visited {
@@ -79,19 +76,16 @@ background: none !important; }
 a:hover {
 color: #ed1115 !important; }
 
-/* Beetle Glow! */
 img[src*="beetle"], img[src*="gb.png"], img[src*="sb.png"] {
     filter: drop-shadow(0px 0px 4px #ffd700) !important;
     transition: transform 0.2s ease !important;
 }
 
-/* --- Mound Box Glow --- */
 .mound-grid img {
     filter: drop-shadow(0px 0px 5px #478bff) !important;
     transition: transform 0.2s ease !important;
 }
 
-/* MAIN PANEL - The big gray stripe in the center in front of the background. */ 
 .container.main {
 background: rgba(44, 125, 109, .2);
 border: 3px solid #8b0000;
@@ -100,7 +94,6 @@ border-radius: 13px; }
 .col-md-9 {
 background: none; } 
  
-/* TOPBAR, NAVBAR, & BREADCRUMB */
 .topbar {
 background: #0d87ff !important; 
 background: linear-gradient(180deg, #0f2c59 0%, #0f2c59 100%) !important; 
@@ -124,7 +117,6 @@ color: #EFA383 !important;
 border-radius: 8px;
 }
 
-/* Mobile Fixes */
 .navbar-toggle {
 border: none !important;
 background: linear-gradient(90deg, #8b0000 0%, #8b0000 100%) !important;
@@ -135,7 +127,6 @@ box-shadow: none !important;
 border-top: none !important;
 }
 
-/* BOOKMARK BAR */
 .breadcrumb {
 background: linear-gradient(180deg, #610303 0%, #8b0000 100%) !important;
 color: #0d87ff !important;
@@ -144,7 +135,6 @@ border-radius: 9px !important;}
 .breadcrumb .active {
 color: #0d87ff; }
 
-/* ALERTS (I don’t touch these) */
 .alert, .alert-success, .alert-info {
     background: #739665 !important;
     border: 1px solid #HEX !important;
@@ -177,9 +167,6 @@ color: #0d87ff; }
     color: #c709ff !important;
 }
 
-
-/*COMMENT BOX - The actual Box color */
-
 div#commentBox {
 background: linear-gradient(180deg, #5a1818 0%, #0f2c59 100%) !important;
 border: none !important;
@@ -199,25 +186,51 @@ position: absolute !important;
 top: 8px !important;
 left: 0px !important;
 width: 100% !important;
-
 font-family: 'Great Vibes', cursive !important; 
 font-size: 18px !important;          
 font-weight: normal !important;      
 letter-spacing: 0.5px !important;
 text-align: center !important;
-    
 color: #54ab9e !important;
+-webkit-text-fill-color: #54ab9e !important;
 text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important; 
 display: block !important;
 }
 
-*/ This is to change the background of the comments themselves */
+div#commentBox {
+background: linear-gradient(90deg, #1d5048 0%, #1a4841 100%) !important;
+border: none !important;
+border-radius: 9px !important;
+position: relative !important;
+padding-top: 40px !important;
+}
+
+div#commentBox > b, div#commentBox > strong {
+display: none !important;
+}
+
+div#commentBox::before {
+content: "What do the skies speak of?" !important; 
+position: absolute !important;
+top: 8px !important;
+left: 0px !important;
+width: 100% !important;
+font-family: 'Great Vibes', cursive !important; 
+font-size: 18px !important;          
+font-weight: normal !important;      
+letter-spacing: 0.5px !important;
+text-align: center !important;
+color: #FFF9E6 !important;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important; 
+display: block !important;
+}
+
 .comment {     
 background: linear-gradient(180deg, #1d5048 0%, #1d5048 100%) !important;
 border: none !important;
 border-bottom: none !important;
 border-radius: 0px !important;
-color: #c9acff !important;
+color: #ffffff !important;
 text-align: left !important;
 }
 
@@ -225,9 +238,9 @@ text-align: left !important;
 background: linear-gradient(180deg, #1a4841 0%, #1a4841 100%) !important;
 }
 
-
 .text-muted { 
-color: #777777 !important; }
+color: #777777 !important; 
+}
 
 button, input[type="submit"], .btn-primary {
 background: linear-gradient(180deg, #880101 0%, #880101 100%) !important;
@@ -237,19 +250,19 @@ border-radius: 6px !important;
 }
 
 table#player.table hr {
-display: none; }
-table#player.table div.xlarge { 
-margin-top: 10px !important; }
+display: none !important; 
+}
 
-/* SIDE PANELS */ 
+table#player.table div.xlarge { 
+margin-top: 10px !important; 
+}
+
 .panel {
 background: linear-gradient(180deg, #0b1a30 0%, #0f2c59 100%) !important;
 color: #574cff !important;
 border: none !important;
 border-radius: 6px !important;
 box-shadow: none !important;  }
-
-/* PROGRESS BARS */
 
 .progress-bar {
 background: linear-gradient(90deg, #8b0000 0%, #b50000  100%) !important;
@@ -268,16 +281,15 @@ color: #HEX !important;}
 .progress div {
 color: #0cf0ce !important; }
 
-/* PROGRESS BAR BACKGROUND */
 .progress {
 background:  #222222;
 color: #HEX !important;
 border-radius: 8px !important;  }
 
-/* CHAT (This was SO difficult sobs cuz all templates were outdated) */
+/* CHAT - I still have to edit this... there's a better way I just haven't found it */
 
 #fraSidebarChat {
-background: #3b4c9c !important;
+background: #540000 !important;
 border: 1px solid #384995 !important;
 border-radius: 9px !important;
 overflow: visible !important;
@@ -303,25 +315,25 @@ border-radius: 4px !important;
 #btnChatSettings,
 #btnLoadNewMessages,
 .s-chat-message_menu {
-background: #384995 !important;
+background: #540000 !important;
 color: #FFF9E6 !important;
 border: none !important;
 border-radius: 4px !important;
 }
 #chatMessageList .s-chat-message:nth-child(odd),
 .s-chat-message:nth-child(odd) {
-background: linear-gradient(180deg, #141A35 0%, #222c5a 100%) !important;
+background: linear-gradient(180deg, #540000 0%, #6d0002 100%) !important;
 color: #ffffff !important;
-border: 1px solid #384995 !important;
+border: 1px solid #540000 !important;
 }
 #chatMessageList .s-chat-message:nth-child(even),
 .s-chat-message:nth-child(even) {
-background: linear-gradient(180deg, #2a3770 0%, #384995 100%) !important;
+background: linear-gradient(180deg, #0b1a30 0%, #01006f 100%) !important;
 color: #ffffff !important;
-border: 1px solid #384995 !important;
+border: 1px solid #540000 !important;
 }
 #chatMessageList {
-background: #3b4c9c !important;
+background: #540000 !important;
 }
 #btnChatSettings::before {
 content: "⚙" !important;
@@ -381,7 +393,7 @@ color: #0d87ff !important; }
 
 html.nolayout {
 background: none !important; }
- 
+
 /* KING DYNASTY/FEATURED/ETC. */
 
 .feature {
@@ -492,8 +504,30 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a::after {
 .navbar-nav {
     padding-left: 95px !important;
 }
- 
-/* TEXT BOXES & BUTTONS */
+
+.container.main::after {
+content: "" !important;
+background-image: url('https://i.postimg.cc/mZCd2m1b/IMG-0256.png') !important;
+background-size: contain !important;
+background-repeat: no-repeat !important;
+position: fixed !important;
+display: block !important;
+width: 250px !important;
+height: 250px !important;
+right: 20px !important;
+bottom: 10px !important;
+z-index: 100 !important;
+pointer-events: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+.container.main::after {
+width: 150px !important;
+height: 150px !important;
+right: 5px !important;
+bottom: 5px !important;
+}
+}
  
 input, textarea, select, button.button,
 a.btn.btn-default.button {
@@ -504,7 +538,6 @@ color: #FFF9E6 !important;
 text-shadow: none !important;
 }
  
- /* CAVE IMAGES - If I want to do images separate I know what to do */
 .cave-grid,
 .mound-grid {
 background: #0f2c59 !important;
@@ -519,7 +552,6 @@ img[src*="unsortedlionsbanner.png"] {
     height: 60px !important;
 }
 
-/* Making Cave and Beetle Images brighten upon hover */
 a:hover, a:active, 
 .feature:hover, .panel:hover, .cave-grid:hover,
 input:hover, select:hover, textarea:hover {
@@ -531,7 +563,6 @@ img[src*="beetle"]:hover, img[src*="gb.png"]:hover, img[src*="sb.png"]:hover {
     transform: scale(1.2) !important;
 } 
 
-/* Here’s where the images start */
 a[href*="cave.php?id="] div.cave-grid > img {
 content: url('https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG') !important;
 object-fit: cover !important;
