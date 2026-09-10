@@ -350,6 +350,8 @@ text-align: center !important;
 transform: none !important;
 padding: 0 !important;
 }
+
+/*Theres an error I have to fix here */
 #btnChatSettings i,
 .s-chat-message_menu i,
 #btnChatSettings .fa,
@@ -509,6 +511,31 @@ border-radius: 4px !important;
 color: #FFF9E6 !important;
 text-shadow: none !important;
 }
+
+/* FIXED THE STUPID ENERGY BAR! */
+form:has(input[name="freeEnergyBoost"]) {
+display: block !important;
+width: 100% !important;
+box-sizing: border-box !important;
+}
+
+form:has(input[name="freeEnergyBoost"]) .panel.panel-default {
+max-width: 100% !important;
+box-sizing: border-box !important;
+overflow: hidden !important;
+}
+
+form:has(input[name="freeEnergyBoost"]) input[type="submit"] {
+max-width: 100% !important;
+box-sizing: border-box !important;
+white-space: nowrap !important;
+}
+
+input[name="freeEnergyBoost"] {
+font-size: 13px !important;
+font-family: Ariel, sans-serif !important;
+}
+
  
 .cave-grid,
 .mound-grid {
