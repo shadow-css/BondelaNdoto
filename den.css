@@ -562,42 +562,12 @@ img[src*="beetle"]:hover, img[src*="gb.png"]:hover, img[src*="sb.png"]:hover {
     transform: scale(1.2) !important;
 } 
 
-a[href*="cave.php?id="] div.cave-grid > img {
-content: url('https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG') !important;
+div.cave-grid>img {
+content: url('https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG.png')!important;
 object-fit: cover !important;
-object-position: left center !important;
+object-position: center 30% !important;
 width: 100% !important;
-height: 128px !important;
-border-radius: 10px !important;
-border: 3px solid #334b72 !important;
-box-shadow: 0 4px 8px rgba(0,0,0,0.5) !important;
-}
-
-a[href*="lionoverview.php"] img {
-content: url("https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG.png") !important;
-object-fit: cover !important;
-object-position: left center !important;
-width: 260px !important;
-height: 60px !important;
-border-radius: 10px !important;
-}
-
-a[href*="nesting.php"] img {
-content: url("https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG.png") !important;
-object-fit: cover !important;
-object-position: left center !important;
-width: 260px !important;
-height: 60px !important;
-border-radius: 10px !important;
-}
-
-a[href*="unsorted.php"] img {
-content: url("https://static.lioden.com/images/dynamic/backgrounds/SecludedWaterfallBG.png") !important;
-object-fit: cover !important;
-object-position: left center !important;
-width: 260px !important;
-height: 60px !important;
-border-radius: 10px !important;
+height: 120px !important;
 }
 
 
