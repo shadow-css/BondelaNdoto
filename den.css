@@ -487,8 +487,8 @@ background-size: contain !important;
 background-repeat: no-repeat !important;
 position: fixed !important;
 display: block !important;
-width: 250px !important;
-height: 250px !important;
+width: 300px !important;
+height: 300px !important;
 right: 20px !important;
 bottom: 10px !important;
 z-index: 100 !important;
@@ -497,8 +497,8 @@ pointer-events: none !important;
 
 @media only screen and (max-width: 768px) {
 .container.main::after {
-width: 180px !important;
-height: 180px !important;
+width: 350px !important;
+height: 350px !important;
 right: 5px !important;
 bottom: 5px !important;
 }
