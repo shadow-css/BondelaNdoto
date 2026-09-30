@@ -500,7 +500,7 @@ pointer-events: none !important;
 width: 250px !important;
 height: 250px !important;
 right: 5px !important;
-bottom: 5px !important;
+bottom: 2px !important;
 }
 }
  
@@ -658,7 +658,7 @@ Credit may not be removed! */
 
 
 .breadcrumb::before {
-    content: "CSS by Shadow #591622" !important;
+    content: "Under the moonlight we stand strong." !important;
     color: #6c26ff !important;
     font-size: 12px !important;
     font-weight: bold !important;
